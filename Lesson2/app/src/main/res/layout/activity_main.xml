@@ -21,12 +21,16 @@
             android:layout_height="wrap_content"
             android:text="@string/answer_yes"
             android:hint="Pick Me"
+            android:onClick="onYesButtonClick"
+            android:id="@+id/answer_yes_button"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_no"
             android:hint="No Pick Me"
+            android:onClick="onNoButtonClick"
+            android:id="@+id/answer_no_button"
             />
     </LinearLayout>
         <LinearLayout
@@ -38,7 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="@string/users_name_edit_text"/>
+                android:hint="@string/users_name_edit_text"
+                android:id="@+id/users_name"/>
 
         </LinearLayout>
 </LinearLayout>
