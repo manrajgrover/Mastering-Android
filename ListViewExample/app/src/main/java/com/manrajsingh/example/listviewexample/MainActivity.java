@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
             "Another random show", "Friends","How I met your mother"
         };
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tvshows);
+        //ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tvshows);
+        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.row_layout,R.id.textView1, tvshows);
         ListView theListView = (ListView) findViewById(R.id.theListView);
         theListView.setAdapter(theAdapter);
         theListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
